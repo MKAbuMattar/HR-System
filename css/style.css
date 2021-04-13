@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+  --color-black: #00000096;
+  --color-white: #fff;
+
+  --font-family: 'Indie Flower', cursive;
+
+  --font-size-lx: 2.5rem;
+  --font-size-l: 2rem;
+  --font-size-m: 1.5rem;
+  --font-size-s: 1.2rem;
+  --font-size-sx: 0.9rem;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/thumbnail.jfif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.grid-col-2 {
+  grid-template-columns: 40% 60%;
+}
+
+header,
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  height: 6rem;
+  padding: 0.5rem;
+}
+
+header>h1 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-lx);
+  font-weight: 600;
+}
+
+.whiteSpace {
+  width: 100%;
+  height: 3rem;
+}
+
+.addEmployeeForm {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.addEmployeeForm fieldset {
+  padding: 2rem;
+}
+
+.addEmployeeForm fieldset>legend {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: var(--font-size-l);
+}
+
+.addEmployeeForm fieldset>label {
+  display: block;
+  font-size: var(--font-size-m);
+  padding: 0.7rem;
+  padding-left: 0;
+}
+
+.addEmployeeForm fieldset>input[type=text],
+.addEmployeeForm fieldset>input[type=email],
+.addEmployeeForm fieldset>select {
+  display: block;
+  border: 0;
+  font-size: var(--font-size-s);
+  width: 100%;
+}
+
+.addEmployeeForm fieldset>select {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  border: 0;
+  border-radius: 0.09rem;
+  padding: 0.5;
+  font-size: var(--font-size-s);
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.tableBox {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+  border: 1px solid var(--color-white);
+}
+
+th {
+  font-size: var(--font-size-m);
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+.total {
+  margin-top: 2rem;
+  border: 1px solid var(--color-white);
+  width: 10rem;
+  font-size: var(--font-size-m);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.displayNone {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  font-size: var(--font-size-s);
+}
